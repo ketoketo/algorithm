@@ -15,6 +15,7 @@ object Main3_3 {
   def bubbleSort(array: Array[Int]): Int = {
     var sw = 0
     var flag = true // 逆隣接有無フラグ
+
     var count = 1 //
     while (flag) {
       flag = false
