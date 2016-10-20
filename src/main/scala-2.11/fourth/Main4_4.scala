@@ -15,9 +15,11 @@ object Main4_4 {
         case "insert" => list = ListBuffer(value) ++ list
         case "delete" =>
           var flag = true
-          for (i <- 0 to list.size - 1) if (flag && list(i) == value) {
-            list.remove(i)
-            flag = false
+          for (i <- 0 to list.size - 1) {
+            if (flag && list(i) == value) {
+              list.remove(i)
+              flag = false
+            }
           }
         case "deleteFirst" => list = list.tail
         case "deleteLast" => list = list.init
