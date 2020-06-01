@@ -8,6 +8,7 @@ object Main5_2 {
     val arrayA = StdIn.readLine().split(" ").map(_.toInt)
     val len2 = StdIn.readInt
     val arrayB = StdIn.readLine().split(" ").map(_.toInt)
+    val arrayC = StdIn.readLine().split(" ").map(_.toInt)
 
     var count = 0
     for (value <- arrayB) {
